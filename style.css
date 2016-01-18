@@ -19,7 +19,7 @@ body {
 	width: auto;
 }
 
-#side-button {
+.side-button {
 	position: relative;
 	display: block;
 	height: 100px;
