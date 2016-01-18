@@ -1,3 +1,6 @@
 body {
 	background-image: url("./res/Background.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
