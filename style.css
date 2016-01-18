@@ -11,3 +11,21 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+#side-bar {
+	position: fixed;
+	float: right;
+	height: 100%;
+	width: auto;
+}
+
+#side-button {
+	position: relative;
+	display: block;
+	height: 100px;
+	width: 450px;
+	margin-top: 10px;
+	background-color: rgba(0, 101, 219, 0.3);
+	border: solid white 1px;
+	border-radius: 3px;
+}
