@@ -23,7 +23,8 @@ body {
 	margin-right: 260px;
 	height: 100vh;
 	border: 1px solid #FFF;
-	border-radius: 3px;
+	border-top: none;
+	border-bottom: none;
 }
 
 #side-bar {
