@@ -11,6 +11,19 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	margin: 0;
+}
+
+#content {
+	width: 75%;
+	background-color: rgba(0, 134, 219, 0.8);
+	position: relative;
+	display: block;
+	float: right;
+	margin-right: 260px;
+	height: 100vh;
+	border: 1px solid #FFF;
+	border-radius: 3px;
 }
 
 #side-bar {
