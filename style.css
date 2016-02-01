@@ -48,6 +48,7 @@ body {
 }
 
 .left {
+	visibility: none;
 	left: -5px;
 }
 
