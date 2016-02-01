@@ -14,20 +14,6 @@ body {
 	margin: 0;
 }
 
-@media screen and (min-width:1081px) {
-	.side-button {
-		width: 175px;
-		padding-left: 50px;
-	}
-}
-
-@media screen and (max-width:1080px) {
-	.side-button {
-		width: 50px;
-		padding-left: 30px;
-	}
-}
-
 #content {
 	width: 75%;
 	max-width: 1200px;
@@ -52,10 +38,12 @@ body {
 .side-button {
 	position: relative;
 	height: 100px;
+	width: 20%;
 	margin-top: 10px;
 	background-color: rgba(0, 134, 219, 0.8);
 	color: white;
 	border: solid white 1px;
 	border-radius: 3px;
 	line-height: 100px;
+	padding: 50px;
 }
