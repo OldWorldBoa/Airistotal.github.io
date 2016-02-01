@@ -79,5 +79,5 @@ body {
 .side-button:hover {
 	animation-name: fill;
 	animation-duration: 0.5s;
-	animation-fill-mode: fill;
+	animation-fill-mode: forwards;
 }
