@@ -27,15 +27,15 @@ body {
 	border-bottom: none;
 }
 
-#left {
+.left {
 	left: -5px;
 }
 
-#right {
+.right {
 	right: -5px;
 }
 
-#side-bar {
+.side-bar {
 	position: fixed;
 	height: 100%;
 	width: 10%;
