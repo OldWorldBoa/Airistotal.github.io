@@ -14,6 +14,11 @@ body {
 	margin: 0;
 }
 
+@font-face {
+	font-family: Digital;
+	src: url(./res/Digital.ttf);
+}
+
 @-webkit-keyframes fill {
     	from {
 		background-color: initial;
@@ -58,6 +63,7 @@ body {
 }
 
 .side-bar {
+	font-face: Digital;
 	text-align: center;
 	position: fixed;
 	height: 100%;
