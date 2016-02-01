@@ -63,7 +63,7 @@ body {
 }
 
 .side-bar {
-	font-face: Digital;
+	font-family: Digital;
 	text-align: center;
 	position: fixed;
 	height: 100%;
