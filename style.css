@@ -30,11 +30,10 @@ body {
 
 #content {
 	width: 75%;
-	max-width: 170px;
+	max-width: 1200px;
 	background-color: rgba(0, 134, 219, 0.8);
 	position: relative;
 	display: block;
-	float: right;
 	margin: auto;
 	height: 100vh;
 	border: 1px solid #FFF;
