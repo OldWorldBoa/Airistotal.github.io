@@ -27,12 +27,22 @@ body {
 	border-bottom: none;
 }
 
+#left {
+	left: -5px;
+}
+
+#right {
+	right: -5px;
+}
+
 #side-bar {
 	position: fixed;
 	height: 100%;
-	width: 15%;
+	width: 10%;
 	top: 0;
-	right: -5px;
+	background-color: rgba(0, 134, 219, 0.8);
+	border: solid white 1px;
+	border-radius: 3px;
 }
 
 .side-button {
