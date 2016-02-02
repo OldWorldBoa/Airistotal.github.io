@@ -67,8 +67,7 @@ body {
 	text-align: center;
 	position: fixed;
 	height: 100%;
-	width: 15%;
-	min-width: 225px;
+	width: 225px;
 	top: 0;
 	background-color: rgba(0, 134, 219, 0.8);
 	border: 1px solid #FFF;
