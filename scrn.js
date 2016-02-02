@@ -1,11 +1,11 @@
 function center_content() {
-  var width = $("body").css("width");
-  var bar_width = $(".side-bar").css("width");
-  var content_width = $("#content").css("width");
+  var width = parseInt($("body").css("width"));
+  var bar_width = parseInt($(".side-bar").css("width"));
+  var content_width = parseInt($("#content").css("width"));
   var margin = (width - bar_width - content_width) / 2;
   
   if(margin >= 0) {
-    $("#content").css("margin-left", margin);
+    $("#content").css("margin-left", margin + "px");
   }
 }
 
