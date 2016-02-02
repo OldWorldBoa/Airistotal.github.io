@@ -41,12 +41,10 @@ body {
 
 #content {
 	width: 850px;
-	left: -7.5%;
 	max-width: 1200px;
 	background-color: rgba(0, 134, 219, 0.8);
 	position: relative;
 	display: block;
-	margin: auto;
 	height: 100vh;
 	border: 1px solid #FFF;
 	border-top: none;
