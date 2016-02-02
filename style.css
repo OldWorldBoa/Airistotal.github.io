@@ -20,23 +20,29 @@ body {
 }
 
 @-webkit-keyframes fill {
-    	from {
-		background-color: initial;
-	}
-	
-	to {
-		background-color: rgba(44, 84, 156, 0.7);
-	}
+    	from {background-color: initial;}
+	to {background-color: rgba(44, 84, 156, 0.7);}
 }
 
 @keyframes fill {
-	from {
-		background-color: initial;
-	}
-	
+	from {background-color: initial;}
+	to {background-color: rgba(44, 84, 156, 0.7);}
+}
+
+@-webkit-keyframes flash {
+    	from {
+    		border-top: initial;
+    		border-bottom: initial;
+    	}
 	to {
-		background-color: rgba(44, 84, 156, 0.7);
+		border-top: solid 1px white;
+		border-bottom: solid 1px white;
 	}
+}
+
+@keyframes flash {
+	from {background-color: initial;}
+	to {background-color: rgba(44, 84, 156, 0.7);}
 }
 
 #content {
@@ -98,4 +104,9 @@ body {
 	animation-name: fill;
 	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
+}
+
+.side-button:active {
+	animation: flash;
+	animation-duration: 0.3s;
 }
