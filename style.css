@@ -83,6 +83,7 @@ body {
 	margin-top: 10px;
 	color: white;
 	line-height: 100px;
+	cursor: pointer;
 }
 
 .side-button:hover {
