@@ -29,32 +29,6 @@ body {
 	to {background-color: rgba(44, 84, 156, 0.7);}
 }
 
-@-webkit-keyframes flash {
-    	from {
-    		border-top: initial;
-    		border-bottom: initial;
-    		background-color: rgba(44, 84, 156, 0.7);
-    	}
-	to {
-		border-top: solid 1px white;
-		border-bottom: solid 1px white;
-		background-color: rgba(44, 84, 156, 0.7);
-	}
-}
-
-@keyframes flash {
-	from {
-    		border-top: initial;
-    		border-bottom: initial;
-    		background-color: rgba(44, 84, 156, 0.7);
-    	}
-	to {
-		border-top: solid 1px white;
-		border-bottom: solid 1px white;
-		background-color: rgba(44, 84, 156, 0.7);
-	}
-}
-
 #content {
 	width: 75%;
 	left: -7.5%;
@@ -117,7 +91,7 @@ body {
 }
 
 .side-button:active {
-	animation: flash;
-	animation-duration: 0.3s;
+	animation-name: fill;
+	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
 }
