@@ -61,15 +61,6 @@ body {
 	margin-bottom: 20px;
 }
 
-.left {
-	visibility: hidden;
-	left: -5px;
-}
-
-.right {
-	right: -5px;
-}
-
 .side-bar {
 	font-family: Digital;
 	font-size: 150%;
@@ -77,11 +68,13 @@ body {
 	position: fixed;
 	height: 100%;
 	width: 15%;
+	min-width: 225px;
 	top: 0;
 	background-color: rgba(0, 134, 219, 0.8);
 	border: 1px solid #FFF;
 	border-top: none;
 	border-bottom: none;
+	right: -5px;
 }
 
 .side-button {
