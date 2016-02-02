@@ -42,6 +42,17 @@ body {
 	border-radius: 32.5px;
 }
 
+.menu-open:hover, .menu-circle:hover {
+	animation-name: fill;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+}
+
+.menu-open:active, .menu-circle:active {
+	animation-name: flash;
+	animation-duration: 0.2s;
+}
+
 .phone-menu {
 	text-align: center;
 	position: fixed;
