@@ -53,6 +53,10 @@ body {
 	animation-duration: 0.2s;
 }
 
+.menu-circle {
+	visibility: hidden;
+}
+
 .phone-menu {
 	text-align: center;
 	position: fixed;
