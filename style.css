@@ -43,7 +43,7 @@ body {
 	/* Large menu */
 	.phone-menu {
 		display: none;
-		width: 0;
+		width: 0!important;
 	}
 }
 
@@ -51,7 +51,7 @@ body {
 	/* Small menu */
 	.side-bar {
 		display: none;
-		width: 0;
+		width: 0!important;
 	}
 }
 
