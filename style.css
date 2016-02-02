@@ -101,7 +101,7 @@ body {
 }
 
 .side-button:active {
-	animation-name: fill;
+	animation-name: flash;
 	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
 }
