@@ -3,9 +3,9 @@ $(document).ready( function() {
     var visibility = $(".menu-circle").css("visibility");
     
     if(visibility == "hidden") {
-      $(".menu-circle").css("visibility", "visible");
+      $(".menu-circle").animate({"visibility", "visible"}, 200, swing);
     } else {
-      $(".menu-circle").css("visibility", "hidden");
+      $(".menu-circle").animate({"visibility", "hidden"}, 200, swing);
     }
   });
 });
