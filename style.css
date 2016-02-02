@@ -42,6 +42,7 @@ body {
 @media screen and (min-width: 1125px) {
 	/* Large menu */
 	.phone-menu {
+		display: none;
 		width: 0;
 	}
 }
@@ -49,6 +50,7 @@ body {
 @media screen and (max-width: 1124px) {
 	/* Small menu */
 	.side-bar {
+		display: none;
 		width: 0;
 	}
 }
