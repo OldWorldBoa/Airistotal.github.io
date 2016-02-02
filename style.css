@@ -54,7 +54,7 @@ body {
 }
 
 .menu-circle {
-	visibility: hidden;
+	opacity: 0;
 }
 
 .phone-menu {
