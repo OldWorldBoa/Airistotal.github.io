@@ -41,8 +41,14 @@ body {
 }
 
 @keyframes flash {
-	from {background-color: initial;}
-	to {background-color: rgba(44, 84, 156, 0.7);}
+	from {
+    		border-top: initial;
+    		border-bottom: initial;
+    	}
+	to {
+		border-top: solid 1px white;
+		border-bottom: solid 1px white;
+	}
 }
 
 #content {
