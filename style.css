@@ -53,6 +53,10 @@ body {
 	border-bottom: none;
 }
 
+#main_logo {
+	font-family: Digital;
+}
+
 .left {
 	visibility: hidden;
 	left: -5px;
