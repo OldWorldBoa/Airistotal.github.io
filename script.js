@@ -1,5 +1,7 @@
 $(document).ready( function() {
+  $("#content").load("about.html");
+  
   $("#about").click(function() {
-    $("#about").load("about.html");
+    $("#content").load("about.html");
   });
 });
