@@ -42,14 +42,14 @@ body {
 @media screen and (min-width: 1125px) {
 	/* Large menu */
 	.phone-menu {
-		visibility: hidden;
+		display: none;
 	}
 }
 
 @media screen and (max-width: 1124px) {
 	/* Small menu */
 	.side-bar {
-		visibility: hidden;
+		display: none;
 	}
 }
 
