@@ -75,6 +75,14 @@ body {
 	margin-bottom: 20px;
 }
 
+.menu-open, .menu-circle {
+	height: 65px;
+	width: 65px;
+	background-color: rgba(0, 134, 219, 0.8);
+	border: 1px solid #FFF;
+	border-radius: 32.5px;
+}
+
 .phone-menu {
 	text-align: center;
 	position: fixed;
