@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 859px) {
 	#content {
-		width: 100%;
-		margin: none;
+		width: 100%!important;
+		margin: none!important;
 	}
 }
