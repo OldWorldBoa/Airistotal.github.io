@@ -13,7 +13,7 @@ $(document).ready( function() {
     toggle_menu();
   });
   
-  $("':not(.menu-open):not(.menu-circle):not(.phone-menu)'").on("tap click", function() {
+  $(":not(.menu-open, .menu-circle, .phone-menu)").on("tap click", function() {
     $(".menu-circle").animate({opacity: 0.0}, 200);
   });
 });
