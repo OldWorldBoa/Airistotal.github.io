@@ -9,8 +9,9 @@ function toggle_menu() {
 }
 
 $(document).ready( function() {
-  $(".menu-open").on("tap click", function() {
+  $(".menu-open").on("tap click", function(e) {
     toggle_menu();
+    e.stopPropagation();
   });
   
   $(":not(.menu-open, .menu-circle, .phone-menu)").on("tap click", function(e) {
