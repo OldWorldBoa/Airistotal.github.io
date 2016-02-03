@@ -13,7 +13,7 @@ $(document).ready( function() {
     toggle_menu();
   });
   
-  $(".menu-open").tap( function() {
+  $(".menu-open").on("tap", function() {
     toggle_menu();
   });
 });
