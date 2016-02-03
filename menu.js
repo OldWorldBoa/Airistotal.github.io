@@ -14,7 +14,7 @@ $(document).ready( function() {
   });
   
   $(":not(.menu-open, .menu-circle, .phone-menu)").on("tap click", function(e) {
-    Console.write(e.target.class);
+    console.log(e.target.class);
     $(".menu-circle").animate({opacity: 0.0}, 200);
   });
 });
