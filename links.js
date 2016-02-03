@@ -1,19 +1,19 @@
 $(document).ready( function() {
   $("#content").load("about.html");
   
-  $(".about").click(function() {
+  $(".about").on("tap", function() {
     $("#content").load("about.html");
   });
   
-  $(".contract").click(function() {
+  $(".contract").on("tap", function() {
     $("#content").load("contract.html");
   });
   
-  $(".news").click(function() {
+  $(".news").on("tap", function() {
     $("#content").load("news.html");
   });
   
-  $(".contact").click(function() {
+  $(".contact").on("tap", function() {
     $("#content").load("contact.html");
   });
 });
