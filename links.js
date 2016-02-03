@@ -1,23 +1,19 @@
 $(document).ready( function() {
   $("#content").load("about.html");
   
-  $(".about").on("tap click", function(e) {
+  $(".about").on("tap click", function() {
     $("#content").load("about.html");
-    e.stopPropagation();
   });
   
-  $(".contract").on("tap click", function(e) {
+  $(".contract").on("tap click", function() {
     $("#content").load("contract.html");
-    e.stopPropagation();
   });
   
-  $(".news").on("tap click", function(e) {
+  $(".news").on("tap click", function() {
     $("#content").load("news.html");
-    e.stopPropagation();
   });
   
-  $(".contact").on("tap click", function(e) {
+  $(".contact").on("tap click", function() {
     $("#content").load("contact.html");
-    e.stopPropagation();
   });
 });
