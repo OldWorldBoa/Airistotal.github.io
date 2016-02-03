@@ -43,5 +43,6 @@
 	#content {
 		width: 100%!important;
 		margin: none!important;
+		border: none!important;
 	}
 }
