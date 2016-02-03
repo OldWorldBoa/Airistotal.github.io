@@ -25,4 +25,8 @@ $(document).ready( function() {
     center_content(); 
     size_body();
   });
+  
+  $(".menu-circle").click( function() {
+    size_body();
+  });
 });
