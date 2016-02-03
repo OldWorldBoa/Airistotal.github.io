@@ -12,4 +12,8 @@ $(document).ready( function() {
   $(".menu-open").on("tap click", function() {
     toggle_menu();
   });
+  
+  $(".phone-menu").focusout(function() {
+    $(".menu-circle").animate({opacity: 0.0}, 200);
+  });
 });
