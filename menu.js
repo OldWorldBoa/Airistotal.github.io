@@ -9,10 +9,6 @@ function toggle_menu() {
 }
 
 $(document).ready( function() {
-  $(".menu-open").click( function() {
-    toggle_menu();
-  });
-  
   $(".menu-open").on("tap", function() {
     toggle_menu();
   });
