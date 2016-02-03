@@ -9,8 +9,20 @@ function center_content() {
   }
 }
 
+function size_body() {
+  var head_height = parseInt($("#head").css("height"));
+  var body_height = parseInt($("body").css("height"));
+  var target_height = body_height - head_height;
+  
+  $("#body").css("height", target_height + "px");
+}
+
 $(document).ready( function() {
   center_content();
+  size_body();
   
-  $(window).resize( center_content );
+  $(window).resize( function() {
+    center_content(); 
+    size_body();
+  });
 });
