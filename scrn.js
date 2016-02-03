@@ -10,8 +10,8 @@ function center_content() {
 }
 
 function size_body() {
-  var head_height = parseInt($("#head").css("height"));
-  var body_height = parseInt($("body").css("height"));
+  var head_height = $("#head").outerHeight(true);
+  var body_height = $("body").outerHeight(true);
   var target_height = body_height - head_height;
   
   $("#body").css("height", target_height + "px");
