@@ -18,7 +18,10 @@ $(document).ready( function() {
   });
   
   $(":not(.menu-open, .menu-circle, .phone-menu)").on("mouseover", function(e) {
-    console.log(e.target.class);
-    $(".menu-circle").animate({opacity: 0.0}, 200);
+    var opacity = parseInt($(".menu-circle").css("opacity"));
+  
+    if(opacity == 1) {
+      $(".menu-circle").animate({opacity: 0.0}, 200);
+    }
   });
 });
