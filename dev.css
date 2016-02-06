@@ -1,7 +1,13 @@
+html {
+	height: 100%;
+}
+
 body {
 	background-color: rgb(243, 243, 243);
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
+	height: 100%;
 }
 
 #header {
@@ -32,6 +38,8 @@ body {
 	border: solid 1px black;
 	border-top: none;
 	border-bottom: none;
+	overflow: scroll;
+	padding-right: 17px;
 }
 
 #menu_container {
@@ -40,6 +48,14 @@ body {
 	width: 100%;
 	bottom: 0;
 	left: 0;
+}
+
+#resume {
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: auto;
+
 }
 
 .header-button {
@@ -68,7 +84,8 @@ body {
 .resume-bit {
 	position:relative;
 	display: inline-block;
-	width: 26%;
+	width: 30%;
+	text-align: center;
 }
 
 .splash-pic {
