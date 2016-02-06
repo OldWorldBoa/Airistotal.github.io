@@ -34,15 +34,22 @@ body {
 	border-bottom: none;
 }
 
+#menu_container {
+	position: relative;
+	height: auto;
+	width: 100%;
+	float: bottom;
+}
+
 .header-button {
 	position: relative;
 	height: 100px;
 	width: auto;
-	margin-top: 10px;
 	color: white;
 	line-height: 100px;
 	cursor: pointer;
 	display: inline-block;
+	float: right;
 }
 
 .header-button:hover {
