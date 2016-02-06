@@ -40,6 +40,28 @@ body {
 	font-family: Digital;
 }
 
+#header {
+	position: relative;
+	height: auto;
+	width: 80%;
+	top: 0;
+	margin: auto;
+}
+
+#logo {
+	height: 175px;
+	width: 175px;
+	position: relative;
+	display: inline-block;
+}
+
+#main {
+	background-color: grey;
+	border: solid 1px black;
+	border-top: none;
+	border-bottom: none;
+}
+
 #main_logo {
 	font-family: Digital;
 	font-size: 200%;
@@ -64,6 +86,7 @@ body {
 	color: white;
 	line-height: 100px;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .header-button:hover {
