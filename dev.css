@@ -10,6 +10,12 @@ body {
 	height: 100%;
 }
 
+#content {
+	width: 100%;
+	overflow: auto;
+	padding-right: 16px;
+}
+
 #header {
 	position: relative;
 	height: auto;
@@ -38,8 +44,6 @@ body {
 	border: solid 1px black;
 	border-top: none;
 	border-bottom: none;
-	overflow: scroll;
-	padding-right: 17px;
 }
 
 #menu_container {
