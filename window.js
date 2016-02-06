@@ -9,7 +9,7 @@ function set_height() {
 function set_width() {
 	var main_width = parseInt($("#main").css("width"));
 	var scroll_width = 17;
-	var content_width = main_width - scroll_width;
+	var content_width = main_width + scroll_width;
 
 	$("#content").css("width", content_width);
 }
