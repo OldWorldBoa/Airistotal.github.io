@@ -56,6 +56,28 @@ body {
 	overflow: hidden;
 }
 
+.header-button {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	margin-top: 10px;
+	color: white;
+	line-height: 100px;
+	cursor: pointer;
+}
+
+.header-button:hover {
+	animation-name: fill;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+}
+
+.header-button:active {
+	animation-name: flash;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+}
+
 .menu-open, .menu-circle {
 	height: 65px;
 	width: 65px;
