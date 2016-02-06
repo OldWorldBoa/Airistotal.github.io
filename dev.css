@@ -60,6 +60,7 @@ body {
 	width: auto;
 	height: auto;
 	margin: auto;
+	display: table-row;
 
 }
 
@@ -88,9 +89,11 @@ body {
 
 .resume-bit {
 	position:relative;
-	display: inline-block;
+	display: table-cell;
 	width: 30%;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .splash-pic {
