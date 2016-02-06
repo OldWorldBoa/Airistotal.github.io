@@ -36,9 +36,9 @@ body {
 
 #menu_container {
 	position: relative;
+	display: inline-table;
 	height: auto;
 	width: 100%;
-	float: bottom;
 }
 
 .header-button {
