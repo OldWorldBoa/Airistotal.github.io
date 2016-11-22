@@ -1,0 +1,43 @@
+body {
+}
+
+.menu_button {
+    display: inline-block;
+    line-height: 3em;
+    height: 3em;
+    width: 100px;
+}
+
+#content {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    height: 400px;
+    border: 1px solid black;
+}
+
+#menu_buttons {
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+    margin: 0 auto;
+    height:auto;
+    text-align: center;
+    width: 100%;
+}
+
+#top_menu {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 10em;
+    border: 1px solid black;
+}
+
+#top_logo {
+    display: inline-block;
+    position: absolute;
+    width: 10em;
+    height: 10em;
+}
