@@ -16,6 +16,7 @@ body {
 }
 
 .menu_button {
+	position: relative;
     background-color: LightGray;
     display: inline-block;
     line-height: 3em;
@@ -24,6 +25,7 @@ body {
     margin-top: 7em;
     border-left: 1px solid gray;
     float: right;
+    z-index: 1;
 }
 
 #menu_padding {
@@ -42,9 +44,10 @@ body {
     bottom: 0;
     left: 10em;
     margin-top: 1em;
-    width: 55%;
+    width: 75%;
     height: 1em;
     background-color: LightGrey;
+    z-index: 0;
 }
 
 #content {
@@ -57,12 +60,14 @@ body {
 #top_menu {
     position: relative;
     margin: auto;
+    padding-top: 15px;
     width: 90%;
     height: 10em;
     text-align: center;
 }
 
 #top_logo {
+	background-color: LightGrey;
     display: inline-block;
     position: relative;
     height: auto;
