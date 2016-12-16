@@ -1,5 +1,6 @@
 var canvas;
 var gl;
+
 //
 // start
 //
@@ -9,6 +10,7 @@ var gl;
 function start() {
   canvas = document.getElementById("glcanvas");
   initWebGL(canvas);      // Initialize the GL context
+
   // Only continue if WebGL is available and working
   if (gl) {
     gl.clearColor(0.0, 0.0, 0.0, 1.0);  // Set clear color to black, fully opaque
@@ -16,7 +18,10 @@ function start() {
     gl.enable(gl.DEPTH_TEST);           // Enable depth testing
     gl.depthFunc(gl.LEQUAL);            // Near things obscure far things
   }
+
+  drawScene();
 }
+
 //
 // initWebGL
 //
@@ -34,4 +39,14 @@ function initWebGL() {
   if (!gl) {
     alert("Unable to initialize WebGL. Your browser may not support it.");
   }
+}
+
+//
+// drawScene
+//
+// Draw the scene, looping and drawing as fast as possible
+//
+function drawScene() {
+  gl.viewport(0, 0, gl.viewportWidth, gl.viewportHeight);
+  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 }
