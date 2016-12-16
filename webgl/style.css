@@ -1,0 +1,11 @@
+body {
+  width: 15px;
+}
+
+.id {
+  height: "100%";
+}
+
+#class {
+  background-image: url(something);
+}
