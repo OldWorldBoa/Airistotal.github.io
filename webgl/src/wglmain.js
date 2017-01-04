@@ -26,10 +26,10 @@ document.body.appendChild( renderer.domElement );
 // make player !!! Counter-clockwise winding for faces !!!
 var player = new THREE.Geometry();
 
-var v0 = new THREE.Vector3(x+0, y+0, 2);
-var v1 = new THREE.Vector3(x+40, y+0, 2);
-var v2 = new THREE.Vector3(x+40, y+40, 2);
-var v3 = new THREE.Vector3(x+0, y+40, 2);
+var v0 = new THREE.Vector3(x-20, y-20, 2);
+var v1 = new THREE.Vector3(x+20, y-20, 2);
+var v2 = new THREE.Vector3(x+20, y+20, 2);
+var v3 = new THREE.Vector3(x-20, y+20, 2);
 
 player.vertices.push(v0);
 player.vertices.push(v1);
