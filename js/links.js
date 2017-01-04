@@ -16,4 +16,8 @@ $(document).ready( function() {
   $(".contact").on("tap click", function() {
     $("#content").load("contact.html", size_body);
   });
+
+  $(".webgl").on("tap click", function() {
+    window.location.href = "http://Airistotal.github.io/webgl/";
+  });
 });
