@@ -136,6 +136,10 @@ body {
 	animation-fill-mode: forwards;
 }
 
+.simple-link {
+	text-decoration: none;
+}
+
 .title {
 	display: inline-block;
 	margin: 0;
