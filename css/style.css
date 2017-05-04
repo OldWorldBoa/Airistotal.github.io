@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background-image: url("../res/Background.jpg");
+	background-image: url("../res/img/Background.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -14,8 +14,13 @@ body {
 	margin: 0;
 }
 
+iframe {
+	width: 1px;
+    min-width: 100%;
+}
+
 #body {
-	overflow: auto;
+	overflow: hidden;
 	width: 100%;
 	padding-right: 15px;
 }
@@ -30,30 +35,23 @@ body {
 	border: 1px solid #FFF;
 	border-top: none;
 	border-bottom: none;
+	overflow: hidden;
 }
 
-#head {
-	margin: 0;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-size: 75px;
-	font-family: Digital;
+#content-loader {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border: none;
+	right: -17px;
 }
 
-#main_logo {
-	font-family: Digital;
+#main-logo {
+	font-family: Trench;
 	font-size: 200%;
 	color: #FFF;
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-#page {
-	height: 100%;
-	margin-left: 80px;
-	margin-right: 80px;
-	color: white;
-	overflow: hidden;
 }
 
 .menu-open, .menu-circle {
@@ -79,12 +77,6 @@ body {
 	opacity: 0;
 }
 
-.meta-inf {
-	display: inline-block;
-	float: right;
-	line-height: 2em;
-}
-
 .phone-menu {
 	text-align: center;
 	position: fixed;
@@ -94,13 +86,13 @@ body {
 	right: 5px;
 }
 
-.post {
-	border-top: solid;
-	margin-bottom: 50px;
-}
+	.phone-menu .simple-link {
+		pointer-events: none;
+		cursor: default;
+	}
 
 .side-bar {
-	font-family: Digital;
+	font-family: Trench;
 	font-size: 150%;
 	text-align: center;
 	position: fixed;
@@ -138,9 +130,4 @@ body {
 
 .simple-link {
 	text-decoration: none;
-}
-
-.title {
-	display: inline-block;
-	margin: 0;
 }

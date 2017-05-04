@@ -1,6 +1,11 @@
 @font-face {
 	font-family: Digital;
-	src: url(../res/Digital.ttf);
+	src: url(../res/fonts/Digital.ttf);
+}
+
+@font-face {
+	font-family: Trench;
+	src: url(../res/fonts/trench.ttf);
 }
 
 @-webkit-keyframes fill {
