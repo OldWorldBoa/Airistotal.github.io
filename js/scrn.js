@@ -1,6 +1,6 @@
 function center_content() {
   var width = parseInt($("body").css("width"));
-  var bar_width = parseInt($(".side-bar").css("width"));
+  var bar_width = parseInt($(".desktop-menu").css("width"));
   var content_width = parseInt($("#content").css("width"));
   var margin = (width - bar_width - content_width) / 2;
   

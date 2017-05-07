@@ -13,7 +13,7 @@
 /* Facebook */
 .fa-facebook {
     background: #3B5998;
-    color: white;
+    color: white!important;
 }
 
 .fa-facebook:hover {
@@ -23,7 +23,7 @@
 /* Twitter */
 .fa-twitter {
     background: #55ACEE;
-    color: white;
+    color: white!important;
 }
 
 .fa-twitter:hover {
@@ -33,7 +33,7 @@
 /* Linked In */
 .fa-linkedin {
   background: #007bb5;
-  color: white;
+  color: white!important;
 }
 
 .fa-linkedin:hover {
@@ -43,7 +43,7 @@
 /* Linked In */
 .fa-github {
   background: #212121;
-  color: white;
+  color: white!important;
 }
 
 .fa-github:hover {

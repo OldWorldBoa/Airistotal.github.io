@@ -6,6 +6,14 @@ h1, h2, h3 {
 	font-family: Trench;
 }
 
+a {
+	color: orange;
+}
+
+a:visited {
+	color: tan;
+}
+
 #page {
 	height: 100%;
 	margin-left: 61px;

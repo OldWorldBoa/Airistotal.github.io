@@ -46,6 +46,21 @@ iframe {
 	right: -17px;
 }
 
+.desktop-menu {
+	font-family: Trench;
+	font-size: 150%;
+	text-align: center;
+	position: fixed;
+	height: 100%;
+	width: 225px;
+	top: 0;
+	background-color: rgba(0, 134, 219, 0.8);
+	border: 1px solid #FFF;
+	border-top: none;
+	border-bottom: none;
+	right: -5px;
+}
+
 #main-logo {
 	font-family: Trench;
 	font-size: 200%;
@@ -90,21 +105,6 @@ iframe {
 		pointer-events: none;
 		cursor: default;
 	}
-
-.side-bar {
-	font-family: Trench;
-	font-size: 150%;
-	text-align: center;
-	position: fixed;
-	height: 100%;
-	width: 225px;
-	top: 0;
-	background-color: rgba(0, 134, 219, 0.8);
-	border: 1px solid #FFF;
-	border-top: none;
-	border-bottom: none;
-	right: -5px;
-}
 
 .side-button {
 	position: relative;
