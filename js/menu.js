@@ -29,4 +29,20 @@ $(document).ready( function() {
       toggle_menu();
     }
   });
+
+  $(".about").on("tap click", function(e) {
+    window.history.pushState({type: "about"}, "about", "?type=about");
+  });
+
+  $(".consult").on("tap click", function(e) {
+    window.history.pushState({type: "consult"}, "consult", "?type=consult");
+  });
+
+  $(".news").on("tap click", function(e) {
+    window.history.pushState({type: "news"}, "news", "?type=news");
+  });
+
+  $(".contact").on("tap click", function(e) {
+    window.history.pushState({type: "contact"}, "contact", "?type=contact");
+  });
 });
