@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 1124px) {
 	/* Small menu */
-	.side-bar {
+	.desktop-menu {
 		display: none;
 		width: 0!important;
 	}
