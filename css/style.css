@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background-image: url("../res/img/Background.jpg");
+	background-color: #686868;
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
