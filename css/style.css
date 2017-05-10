@@ -46,6 +46,19 @@ iframe {
 	right: -17px;
 }
 
+#main-logo {
+	font-family: Trench;
+	font-size: 200%;
+	color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#menu-items {
+	margin: 0;
+	padding: 0;
+}
+
 .desktop-menu {
 	font-family: Trench;
 	font-size: 150%;
@@ -59,14 +72,6 @@ iframe {
 	border-top: none;
 	border-bottom: none;
 	right: -5px;
-}
-
-#main-logo {
-	font-family: Trench;
-	font-size: 200%;
-	color: #FFF;
-	margin-top: 20px;
-	margin-bottom: 20px;
 }
 
 .menu-open, .menu-circle {

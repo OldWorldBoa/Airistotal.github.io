@@ -17,12 +17,28 @@ function size_body() {
   $("#body").css("height", target_height + "px");
 }
 
-$(document).ready( function() {
+function size_menu() {
+  var menu_height = $(".desktop-menu").outerHeight(true);
+  var name_height = $("#main-logo").outerHeight(true);
+  var target_height = menu_height - name_height;
+
+  var num_buttons = $(".side-button").length;
+  var button_height = target_height / num_buttons;
+
+  console.log(menu_height, name_height, target_height, num_buttons, button_height);
+
+  $(".side-button").css("height", button_height - 10 + "px");
+  $(".side-button").css("line-height", button_height - 10 + "px");
+}
+
+$(window).load( function(e) {
   center_content();
   size_body();
+  size_menu()
   
   $(window).resize( function() {
     center_content(); 
     size_body();
+    size_menu();
   });
 });
