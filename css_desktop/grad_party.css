@@ -1,0 +1,68 @@
+html, body {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+	z-index: 1;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-size: 28px;
+}
+
+h1, h2 {
+	font-family: Sensadillo;
+}
+
+.flow-p {
+	margin-top: 0;
+}
+
+#content {
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+#left-border {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 60px;
+}
+
+#lineR1, #lineL1 {
+	stroke: black;
+	stroke-width: 7;
+}
+
+#lineR2, #lineL2 {
+	stroke: green;
+	stroke-width: 10;
+}
+
+#lineR3, #lineL3 {
+	stroke: purple;
+	stroke-width: 12;
+}
+
+#lineR4, #lineL4 {
+	stroke: black;
+	stroke-width: 7;
+}
+
+#right-border {
+	position: relative;
+	float: right;
+	height: 100%;
+	width: 60px;
+}
+
