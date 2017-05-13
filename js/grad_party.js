@@ -3,7 +3,9 @@ $(document).ready(function() {
 	$svg_l = $("#left-border");
 	$content = $("#content");
 
-	if( $svg_r.height() < $content.height()) {
+
+
+	if( $svg_l.height() < $content.height()) {
 		$svg_r.css("height", $content.height());
 		$svg_l.css("height", $content.height());
 	} else {
@@ -12,7 +14,7 @@ $(document).ready(function() {
 	}
 
 	$(window).resize(function() {
-		if( $svg_r.height() < $content.height()) {
+		if( $svg_l.height() < $content.height()) {
 			$svg_r.css("height", $content.height());
 			$svg_l.css("height", $content.height());
 		} else {
