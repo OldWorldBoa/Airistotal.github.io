@@ -17,7 +17,7 @@ camera.position.z = 5;
 
 var loader = new THREE.FBXLoader();
 loader.load('../res/card.fbx', function (object) {
-    console.log(Json.stringify(object));
+    console.log(JSON.stringify(object));
 
     object.mixer = new THREE.AnimationMixer(object);
     mixers.push(object.mixer);
