@@ -1,0 +1,66 @@
+@media screen and (max-width: 540px) {
+	#head {
+		font-size: 45px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+
+	#page {
+		margin-left: 15px;
+		margin-right: 45px;
+	}
+
+	.fa {
+		margin: 0;
+		padding: 8px;
+		width: 23px;
+		font-size: 23px;
+		box-shadow: 2px 2px 2px #080650;
+	}
+
+	.menu-open, .menu-circle {
+		height: 45px;
+		width: 45px;
+	}
+
+	.phone-menu {
+		width: 45px;
+	}
+
+	#sm-buttons {
+		width: 180px;
+	}
+
+    #content {
+        width: 100%!important;
+
+    }
+}
+
+@media screen and (min-width: 1125px) {
+    /* Large menu */
+    .phone-menu {
+        display: none;
+        width: 0 !important;
+    }
+
+    #content_padding {
+        padding-right: 225px;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    /* Small menu */
+    .desktop-menu {
+        display: none;
+        width: 0 !important;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    #content {
+        width: 100% !important;
+        margin: none !important;
+        border: none !important;
+    }
+}
