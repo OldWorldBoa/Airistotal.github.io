@@ -17,27 +17,3 @@
 	from {background-color: initial;}
 	to {background-color: rgba(44, 84, 156, 0.7);}
 }
-
-@media screen and (min-width: 1125px) {
-	/* Large menu */
-	.phone-menu {
-		display: none;
-		width: 0!important;
-	}
-}
-
-@media screen and (max-width: 1124px) {
-	/* Small menu */
-	.desktop-menu {
-		display: none;
-		width: 0!important;
-	}
-}
-
-@media screen and (max-width: 859px) {
-	#content {
-		width: 100%!important;
-		margin: none!important;
-		border: none!important;
-	}
-}

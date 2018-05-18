@@ -25,17 +25,25 @@ iframe {
 	padding-right: 15px;
 }
 
+#content_padding {
+    display: block;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #content {
-	width: 850px;
-	max-width: 1200px;
-	background-color: rgba(0, 134, 219, 0.98);
-	position: relative;
-	display: block;
-	height: 100vh;
-	border: 1px solid #FFF;
-	border-top: none;
-	border-bottom: none;
-	overflow: hidden;
+    position: relative;
+    display: block;
+    width: 850px;
+    max-width: 1200px;
+    background-color: rgba(0, 134, 219, 0.98);
+    height: 100vh;
+    margin: auto;
+    border: 1px solid #FFF;
+    border-top: none;
+    border-bottom: none;
+    overflow: hidden;
 }
 
 #content-loader {
