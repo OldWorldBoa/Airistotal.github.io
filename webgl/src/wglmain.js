@@ -1,104 +1,45 @@
-// Global player variables
-var x = 0;
-var y = 0;
-var left = false;
-var right = false;
-var up = false;
-var down = false;
-
 // Initialize scene
 var scene = new THREE.Scene();
-var camera = new THREE.OrthographicCamera( 
-	document.body.clientWidth / - 2,	// left
-	document.body.clientWidth / 2, 		// right
-	document.body.clientHeight / 2, 	// top
-	document.body.clientHeight / - 2, 	// bottom
-	1, 				// near
-	1000 			// far
-);
+var aspect = window.innerWidth / window.innerHeight;
+var camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 1000);
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
 scene.add( camera );
 
-var renderer = new THREE.WebGLRenderer();
-renderer.setSize( document.body.clientWidth, document.body.clientHeight );
-document.body.appendChild( renderer.domElement );
+var geometry = new THREE.BoxGeometry(1, 1, 1);
+var material = new THREE.MeshNormalMaterial();
+var cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+camera.position.z = 5;
 
-// make player !!! Counter-clockwise winding for faces !!!
-var player = new THREE.Geometry();
 
-var v0 = new THREE.Vector3(x-20, y-20, 2);
-var v1 = new THREE.Vector3(x+20, y-20, 2);
-var v2 = new THREE.Vector3(x+20, y+20, 2);
-var v3 = new THREE.Vector3(x-20, y+20, 2);
+var loader = new THREE.FBXLoader();
+loader.load('../res/card.fbx', function (object) {
+    console.log(Json.stringify(object));
 
-player.vertices.push(v0);
-player.vertices.push(v1);
-player.vertices.push(v2);
-player.vertices.push(v3);
-
-player.faces.push(new THREE.Face3(0, 1, 2));
-player.faces.push(new THREE.Face3(0, 2, 3));
-player.computeFaceNormals();
-
-var mesh = new THREE.Mesh(player, new THREE.MeshNormalMaterial());
-mesh.geometry.dynamic = true;
-scene.add(mesh);
-
-camera.position.z = 50;
+    object.mixer = new THREE.AnimationMixer(object);
+    mixers.push(object.mixer);
+    var action = object.mixer.clipAction(object.animations[0]);
+    action.play();
+    object.traverse(function (child) {
+        if (child.isMesh) {
+            child.castShadow = true;
+            child.receiveShadow = true;
+        }
+    });
+    scene.add(object);
+});
 
 // Draw scene
-function render() {
-	requestAnimationFrame( render );
-	renderer.render( scene, camera );
+var render = function () {
+    requestAnimationFrame(render);
 
-	update_player();
-};
+    cube.rotation.x += 0.05;
+    cube.rotation.y += 0.05;
 
-function update_player() {
-	var len = mesh.geometry.vertices.length;
-
-	if(left) {
-		mesh.geometry.verticesNeedUpdate = true;
-
-		for(var i = 0; i < len; i++) {
-			console.log(mesh.geometry.vertices[i]);
-			console.log(i, len);
-
-			if(mesh.geometry.vertices[i]) {
-				mesh.geometry.vertices[i].x--;
-			}
-		}
-	}
-
-	if(right) {
-		mesh.geometry.verticesNeedUpdate = true;
-		
-		for(var i = 0; i < len; i++) {
-			if(mesh.geometry.vertices[i]) {
-				mesh.geometry.vertices[i].x++;
-			}
-		}
-	}
-
-	if(up) {
-		mesh.geometry.verticesNeedUpdate = true;
-		
-		for(var i = 0; i < len; i++) {
-			if(mesh.geometry.vertices[i]) {
-				mesh.geometry.vertices[i].y++;
-			}
-		}
-	}
-
-	if(down) {
-		mesh.geometry.verticesNeedUpdate = true;
-		
-		for(var i = 0; i < len; i++) {
-			if(mesh.geometry.vertices[i]) {
-				mesh.geometry.vertices[i].y--;
-			}
-		}
-	}
+    renderer.render(scene, camera);
 };
 
 render();
