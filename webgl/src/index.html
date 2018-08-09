@@ -7,29 +7,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/92/three.js"></script>
         <script src="../libs/FBXLoader.js"></script>
+        <script src="../libs/OrbitControls.js"></script>
+        <script src="../js/ui.js"></script>
 
-        <style>
-            html {
-                position: relative;
-                overflow: hidden;
-                height: 100%;
-                width: 100%;
-            }
-            body {
-                position: relative;
-                overflow: hidden;
-                margin: 0; 
-                padding: 0;
-                height: 100%;
-                width: 100%;
-            }
-            canvas { 
-                position: relative;
-                overflow: hidden;
-            }
-        </style>
+        <link href="../css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <script src="./wglmain.js"></script>
+        <div id="overlay">
+            <div id="button"></div>
+        </div>
+        <script src="../js/wglmain.js"></script>
     </body>
 </html>
