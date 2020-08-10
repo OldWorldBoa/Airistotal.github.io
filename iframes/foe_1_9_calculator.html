@@ -1,0 +1,55 @@
+<!DOCTYPE html/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="../css_desktop/fonts.css">
+<link rel="stylesheet" type="text/css" href="../css_desktop/rules.css">
+<link rel="stylesheet" type="text/css" href="../css_desktop/iframe.css">
+<link rel="stylesheet" type="text/css" href="../css_desktop/responsive.css">
+<link rel="stylesheet" type="text/css" href="../css_desktop/foe_1_9_calculator.css">
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="../js/foe_1_9_calculator.js"></script>
+
+<!-- Google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98692424-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<div id="page">
+    <h1 id="head">FoE - 1.9 Calculator</h1>
+    <div id="body">
+    <div class="label">Total FPs required.</div class="label">
+    <input type="number" id="total_fps" min="0" max="20000" />
+    <br/>
+
+    <div class="label">First place FP reward</div class="label">
+    <input type="number" id="first_place_fps" min="0" max="10000" />
+    <br/>
+    <div class="label">Second place FP reward</div class="label">
+    <input type="number" id="second_place_fps" min="0" max="10000" />
+    <br/>
+    <div class="label">Third place FP reward</div class="label">
+    <input type="number" id="third_place_fps" min="0" max="10000" />
+    <br/>
+    <div class="label">Fourth place FP reward</div class="label">
+    <input type="number" id="fourth_place_fps" min="0" max="10000" />
+    <br/>
+    <div class="label">Fifth place FP reward</div class="label">
+    <input type="number" id="fifth_place_fps" min="0" max="10000" />
+    <br/>
+
+    <button id="calucate_output">Calculate</button>
+    <br/>
+    <br/>
+
+    <div class="label">Total leftover FPs:</div class="label">
+    <div id="output"></div>
+  </div>
+</div>

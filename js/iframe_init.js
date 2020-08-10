@@ -25,6 +25,12 @@ $(document).ready( function() {
 	case "contact":
 		$("#content-loader").attr("src", "iframes/contact.html");
 		break;
+  case "foe_1_9_calculator":
+    $("#content-loader").attr("src", "iframes/foe_1_9_calculator.html");
+    break;
+  case "projects":
+    $("#content-loader").attr("src", "iframes/projects.html");
+    break;
 	default:
 		$("#content-loader").attr("src", "iframes/about.html");
 		break;

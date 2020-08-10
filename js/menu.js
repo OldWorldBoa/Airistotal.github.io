@@ -45,4 +45,8 @@ $(document).ready( function() {
   $(".contact").on("tap click", function(e) {
     window.history.pushState({type: "contact"}, "contact", "?type=contact");
   });
+
+  $(".projects").on("tap click", function(e) {
+    window.history.pushState({type: "projects"}, "projects", "?type=projects");
+  });
 });
