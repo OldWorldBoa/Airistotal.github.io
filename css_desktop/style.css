@@ -4,19 +4,19 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom right, #686868, #999999);
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
+  background-image: url(../res/img/cyber2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
 }
 
 iframe {
 	width: 1px;
-    min-width: 100%;
+  min-width: 100%;
 }
 
 #body {
@@ -26,24 +26,24 @@ iframe {
 }
 
 #content_padding {
-    display: block;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
+  display: block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #content {
-    position: relative;
-    display: block;
-    width: 850px;
-    max-width: 1200px;
-    background-color: rgba(0, 134, 219, 0.98);
-    height: 100vh;
-    margin: auto;
-    border: 1px solid #FFF;
-    border-top: none;
-    border-bottom: none;
-    overflow: overlay;
+  position: relative;
+  display: block;
+  width: 850px;
+  max-width: 1200px;
+  background-color: rgba(3, 33, 33, 0.96);
+  height: 100vh;
+  margin: auto;
+  border: 1px solid #FFF;
+  border-top: none;
+  border-bottom: none;
+  overflow: overlay;
 }
 
 #content-loader {
@@ -75,7 +75,7 @@ iframe {
 	height: 100%;
 	width: 225px;
 	top: 0;
-	background-color: rgba(0, 134, 219, 0.8);
+  background-color: rgba(3, 33, 33, 0.9);
 	border: 1px solid #FFF;
 	border-top: none;
 	border-bottom: none;
@@ -85,7 +85,7 @@ iframe {
 .menu-open, .menu-circle {
 	height: 65px;
 	width: 65px;
-	background-color: rgba(0, 134, 219, 0.9);
+  background-color: rgba(3, 33, 33, 0.9);
 	border: 1px solid #FFF;
 	border-radius: 32.5px;
 }
