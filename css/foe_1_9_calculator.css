@@ -1,0 +1,12 @@
+input {
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 190px;
+  display: inline-block;
+}
+
+.result {
+  display: inline-block;
+}

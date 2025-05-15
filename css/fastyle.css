@@ -1,0 +1,49 @@
+/* Style all font awesome icons */
+.fa {
+    margin: 15px;
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white!important;
+}
+
+.fa-facebook:hover {
+    background: #516899;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white!important;
+}
+
+.fa-twitter:hover {
+    background: #85C0ED;
+}
+
+/* Linked In */
+.fa-linkedin {
+  background: #007bb5;
+  color: white!important;
+}
+
+.fa-linkedin:hover {
+    background: #4190B5;
+}
+
+/* Linked In */
+.fa-github {
+  background: #212121;
+  color: white!important;
+}
+
+.fa-github:hover {
+    background: #5C5C5C;
+}
